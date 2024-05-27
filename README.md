@@ -9,17 +9,20 @@
 <a href=""><img src="https://img.shields.io/github/stars/nhattruongpham/mACPpred2?" alt="stars"></a>
 <a href=""><img src="https://img.shields.io/github/forks/nhattruongpham/mACPpred2?" alt="forks"></a>
 <a href=""><img src="https://img.shields.io/github/license/nhattruongpham/mACPpred2?" alt="license"></a>
+<a href="https://doi.org/10.xxxx/zenodo.yyyyyyy">
+    <img src="https://zenodo.org/badge/doi/10.xxxx/zenodo.yyyyyyy.svg" alt="DOI">
+</a>
 </p>
 
 <p align="center">
   <a href="#introduction">Introduction</a> •
   <a href="#installation">Installation</a> •
-  <a href="#getting-stared">Getting started</a> •
+  <a href="#getting-started">Getting Started</a> •
   <a href="#citation">Citation</a> •
   <a href="#references">References</a>
 </p>
 
-<p align="center"><img src="https://github.com/nhattruongpham/mACPpred2/raw/main/.github/mACPpred2_Workflow.png" height="250"/></p>
+<p align="center"><img src="https://github.com/nhattruongpham/mACPpred2/raw/main/.github/mACPpred2_Workflow.png" height="400"/></p>
 
 ## Introduction
 This repository 
@@ -59,7 +62,7 @@ echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib:$CUDNN_PATH/lib'
 source $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
 ```
 
-### Installing bio-embeddings and re-installing PyTorch with CUDA support
+### Installing bio-embeddings<sup>[1]</sup> and re-installing PyTorch with CUDA support
 ```shell
 python -m pip install bio-embeddings[seqvec] --no-cache-dir
 ```
@@ -99,7 +102,7 @@ cd mACPpred2
 ```
 
 ## Downloading basline and final models
-* Please download the baseline and final models via Zenodo at https://zenodo.org/
+* Please download the baseline and final models via Zenodo at [![DOI](https://zenodo.org/badge/doi/10.xxxx/zenodo.yyyyyyy.svg)](https://doi.org/10.xxxx/zenodo.yyyyyyy)
 * For the baseline models, please extract and put all *.pkl files into the [models/baseline_models](https://github.com/nhattruongpham/mACPpred2/tree/main/models/baseline_models) folder.
 * For the final models, please please extract and put all *.h5 files into [models/final_models](https://github.com/nhattruongpham/mACPpred2/tree/main/models/final_models) folder.
 
@@ -129,3 +132,7 @@ If you use this code or part of it, please cite the following papers:
 ```
 
 ## References
+[1] Dallago, C., Schütze, K., Heinzinger, M., Olenyi, T., Littmann, M., Lu, A. X., Yang, K. K., Min, S., Yoon, S., Morton, J. T., & Rost, B. (2021). Learned embeddings from deep learning to visualize and predict protein sets. <i>Current Protocols</i>, 1, e113. <a href="https://doi.org/10.1002/cpz1.113"><img src="https://zenodo.org/badge/doi/10.1002/cpz1.113.svg" alt="DOI"> <br>
+</a>
+[2] Özçelik, R., van Weesep, L., de Ruiter, S., & Grisoni, F. (2024). peptidy: A light-weight Python library for peptide representation in machine learning. <a href="https://doi.org/10.26434/chemrxiv-2024-bm3lv"><img src="https://zenodo.org/badge/doi/10.26434/chemrxiv-2024-bm3lv.svg" alt="DOI"></a> <br>
+[3] Dorfer, T. (2021). <b><i>protlearn:</i></b> A Python package for extracting protein sequence features. (v0.0.3 on Mar 24, 2021) URL: https://github.com/tadorfer/protlearn.
