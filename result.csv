@@ -1,0 +1,11 @@
+Name,Class,Probability
+Positive_Test_ACP_DL_ACP240_95,ACP,0.998
+Positive_Test_MLACP2_1,ACP,0.827
+Positive_Test_MLACP2_3,ACP,0.989
+Positive_Test_MLACP2_12,ACP,0.999
+Positive_Test_MLACP2_13,ACP,0.998
+Negative_Test_MLACP2_1253,Non-ACP,0.001
+Negative_Test_MLACP2_1254,Non-ACP,0.001
+Negative_Test_MLACP2_1255,ACP,0.513
+Negative_Test_MLACP2_1256,Non-ACP,0.008
+Negative_Test_MLACP2_1257,Non-ACP,0.322
