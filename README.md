@@ -28,6 +28,12 @@
 This repository provides the standalone program that was added to the mACPpred 2.0 web server at https://balalab-skku.org/mACPpred2/. The baseline and final models are available via Zenodo at [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.11350064.svg)](https://doi.org/10.5281/zenodo.11350064)
 
 ## Installation
+### Software requirements
+* Ubuntu 20.04.6 LTS (This source code has been already tested on Ubuntu)
+* CUDA 11.7 (with GPU suport)
+* cuDNN 8.6.0.163 (with GPU support)
+* Python 3.9
+
 ### Creating conda environment
 ```shell
 conda create -n mACPpred2 python=3.9.12
@@ -134,5 +140,5 @@ If you use this code or part of it, please cite the following papers:
 ## References
 [1] Dallago, C., Schütze, K., Heinzinger, M., Olenyi, T., Littmann, M., Lu, A. X., Yang, K. K., Min, S., Yoon, S., Morton, J. T., & Rost, B. (2021). Learned embeddings from deep learning to visualize and predict protein sets. <i>Current Protocols</i>, 1, e113. <a href="https://doi.org/10.1002/cpz1.113"><img src="https://zenodo.org/badge/doi/10.1002/cpz1.113.svg" alt="DOI"> <br>
 </a>
-[2] Özçelik, R., van Weesep, L., de Ruiter, S., & Grisoni, F. (2024). peptidy: A light-weight Python library for peptide representation in machine learning. <a href="https://doi.org/10.26434/chemrxiv-2024-bm3lv"><img src="https://zenodo.org/badge/doi/10.26434/chemrxiv-2024-bm3lv.svg" alt="DOI"></a> <br>
+[2] Özçelik, R., van Weesep, L., de Ruiter, S., & Grisoni, F. (2024). <b><i>peptidy:</i></b> A light-weight Python library for peptide representation in machine learning. <a href="https://doi.org/10.26434/chemrxiv-2024-bm3lv"><img src="https://zenodo.org/badge/doi/10.26434/chemrxiv-2024-bm3lv.svg" alt="DOI"></a> <br>
 [3] Dorfer, T. (2021). <b><i>protlearn:</i></b> A Python package for extracting protein sequence features. (v0.0.3 on Mar 24, 2021) URL: https://github.com/tadorfer/protlearn.

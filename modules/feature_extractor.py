@@ -11,43 +11,22 @@ from bio_embeddings.embed import ESM1vEmbedder, ESM1bEmbedder, ProtTransT5XLU50E
 
 device = "cpu"
 
-# ESV = ESM1vEmbedder(ensemble_id=1, device='cuda')
-# ESB = ESM1bEmbedder(device='cuda')
-# PTU = ProtTransT5UniRef50Embedder(device='cuda')
-# PTL = ProtTransT5XLU50Embedder(device='cuda')
-# PTN = ProtTransXLNetUniRef100Embedder(device='cuda')
-# PTBB = ProtTransBertBFDEmbedder(device='cuda')
-# PTAB = ProtTransAlbertBFDEmbedder(device='cuda')
-# S2V = SeqVecEmbedder(device=device)
-# PLUSRNN = PLUSRNNEmbedder(device=device)
-# Bepler = BeplerEmbedder(device=device)
-# W2V = Word2VecEmbedder(device=device)
-# GloVe = GloveEmbedder(device=device)
-# FT = FastTextEmbedder(device=device)
-# CPCProt = CPCProtEmbedder(device=device)
-# ESM = ESMEmbedder(device=device)
-# PTB = ProtTransT5BFDEmbedder(device=device)
-
-ESM1v_MODEL_PATH = "/media/nhattruongpham/DATA/DjangoProjects/DjangoProjects/BALALAB/utils/pretrained_models/esm1v_t33_650M_UR90S_1.pt"
-ESM1b_MODEL_PATH = "/media/nhattruongpham/DATA/DjangoProjects/DjangoProjects/BALALAB/utils/pretrained_models/esm1b_t33_650M_UR50S.pt"
-
-# call class -> functions
-ESV = ESM1vEmbedder(model_file=ESM1v_MODEL_PATH, ensemble_id=1, device='cuda')
-ESB = ESM1bEmbedder(model_file=ESM1b_MODEL_PATH, device='cuda')
-PTU = ProtTransT5UniRef50Embedder(model_directory="/home/nhattruongpham/CBBL_SKKU_Projs/Pretrained_Model_Files/bio_embeddings/ProtTransT5UniRef50", device='cuda')
-PTL = ProtTransT5XLU50Embedder(model_directory="/home/nhattruongpham/CBBL_SKKU_Projs/Pretrained_Model_Files/bio_embeddings/ProtTransT5XLU50", device='cuda')
-PTN = ProtTransXLNetUniRef100Embedder(model_directory="/home/nhattruongpham/CBBL_SKKU_Projs/Pretrained_Model_Files/bio_embeddings/ProtTransXLNetUniRef100", device='cuda')
-PTBB = ProtTransBertBFDEmbedder(model_directory="/home/nhattruongpham/CBBL_SKKU_Projs/Pretrained_Model_Files/bio_embeddings/ProtTransBertBFD", device='cuda')
-PTAB = ProtTransAlbertBFDEmbedder(model_directory="/home/nhattruongpham/CBBL_SKKU_Projs/Pretrained_Model_Files/bio_embeddings/ProtTransAlbertBFD", device='cuda')
-S2V = SeqVecEmbedder(weights_file="/home/nhattruongpham/CBBL_SKKU_Projs/Pretrained_Model_Files/bio_embeddings/Seq2Vec/weights_file", options_file="/home/nhattruongpham/CBBL_SKKU_Projs/Pretrained_Model_Files/bio_embeddings/Seq2Vec/options_file", device=device)
-PLUSRNN = PLUSRNNEmbedder(model_file="/home/nhattruongpham/CBBL_SKKU_Projs/Pretrained_Model_Files/bio_embeddings/PLUSRNN/model_file", device=device)
-Bepler = BeplerEmbedder(model_file="/home/nhattruongpham/CBBL_SKKU_Projs/Pretrained_Model_Files/bio_embeddings/Bepler/model_file", device=device)
-W2V = Word2VecEmbedder(model_file="/home/nhattruongpham/CBBL_SKKU_Projs/Pretrained_Model_Files/bio_embeddings/Word2Vec/model_file", device=device)
-GloVe = GloveEmbedder(model_file="/home/nhattruongpham/CBBL_SKKU_Projs/Pretrained_Model_Files/bio_embeddings/GloVe/model_file", device=device)
-FT = FastTextEmbedder(model_file="/home/nhattruongpham/CBBL_SKKU_Projs/Pretrained_Model_Files/bio_embeddings/FastText/model_file", device=device)
-CPCProt = CPCProtEmbedder(model_file="/home/nhattruongpham/CBBL_SKKU_Projs/Pretrained_Model_Files/bio_embeddings/CPCProt/model_file", device=device)
-ESM = ESMEmbedder(model_file="/home/nhattruongpham/CBBL_SKKU_Projs/Pretrained_Model_Files/bio_embeddings/ESM/esm1_t34_670M_UR50S.pt", device=device)
-PTB = ProtTransT5BFDEmbedder(model_directory="/home/nhattruongpham/CBBL_SKKU_Projs/Pretrained_Model_Files/bio_embeddings/ProtTransT5BFD", device=device)
+ESV = ESM1vEmbedder(ensemble_id=1, device='cuda')
+ESB = ESM1bEmbedder(device='cuda')
+PTU = ProtTransT5UniRef50Embedder(device='cuda')
+PTL = ProtTransT5XLU50Embedder(device='cuda')
+PTN = ProtTransXLNetUniRef100Embedder(device='cuda')
+PTBB = ProtTransBertBFDEmbedder(device='cuda')
+PTAB = ProtTransAlbertBFDEmbedder(device='cuda')
+S2V = SeqVecEmbedder(device=device)
+PLUSRNN = PLUSRNNEmbedder(device=device)
+Bepler = BeplerEmbedder(device=device)
+W2V = Word2VecEmbedder(device=device)
+GloVe = GloveEmbedder(device=device)
+FT = FastTextEmbedder(device=device)
+CPCProt = CPCProtEmbedder(device=device)
+ESM = ESMEmbedder(device=device)
+PTB = ProtTransT5BFDEmbedder(device=device)
 
 # Extract 16 NLP-based features
 def extract_Bepler(fastas):
