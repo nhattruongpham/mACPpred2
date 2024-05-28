@@ -22,10 +22,10 @@
   <a href="#references">References</a>
 </p>
 
-<p align="center"><img src="https://github.com/nhattruongpham/mACPpred2/raw/main/.github/mACPpred2_Workflow.png" height="400"/></p>
+<p align="center"><img src="https://github.com/nhattruongpham/mACPpred2/raw/main/.github/mACPpred2_Workflow.png" width="1280"/></p>
 
 ## Introduction
-This repository 
+This repository provides the standalone program that was added to the mACPpred 2.0 web server at https://balalab-skku.org/mACPpred2/. The baseline and final models are available via Zenodo at [![DOI](https://zenodo.org/badge/doi/10.xxxx/zenodo.yyyyyyy.svg)](https://doi.org/10.xxxx/zenodo.yyyyyyy)
 
 ## Installation
 ### Creating conda environment
