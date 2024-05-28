@@ -9,8 +9,8 @@
 <a href=""><img src="https://img.shields.io/github/stars/nhattruongpham/mACPpred2?" alt="stars"></a>
 <a href=""><img src="https://img.shields.io/github/forks/nhattruongpham/mACPpred2?" alt="forks"></a>
 <a href=""><img src="https://img.shields.io/github/license/nhattruongpham/mACPpred2?" alt="license"></a>
-<a href="https://doi.org/10.xxxx/zenodo.yyyyyyy">
-    <img src="https://zenodo.org/badge/doi/10.xxxx/zenodo.yyyyyyy.svg" alt="DOI">
+<a href="https://doi.org/10.5281/zenodo.11350064">
+    <img src="https://zenodo.org/badge/doi/10.5281/zenodo.11350064.svg" alt="DOI">
 </a>
 </p>
 
@@ -25,7 +25,7 @@
 <p align="center"><img src="https://github.com/nhattruongpham/mACPpred2/raw/main/.github/mACPpred2_Workflow.png" width="1280"/></p>
 
 ## Introduction
-This repository provides the standalone program that was added to the mACPpred 2.0 web server at https://balalab-skku.org/mACPpred2/. The baseline and final models are available via Zenodo at [![DOI](https://zenodo.org/badge/doi/10.xxxx/zenodo.yyyyyyy.svg)](https://doi.org/10.xxxx/zenodo.yyyyyyy)
+This repository provides the standalone program that was added to the mACPpred 2.0 web server at https://balalab-skku.org/mACPpred2/. The baseline and final models are available via Zenodo at [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.11350064.svg)](https://doi.org/10.5281/zenodo.11350064)
 
 ## Installation
 ### Creating conda environment
@@ -102,7 +102,7 @@ cd mACPpred2
 ```
 
 ## Downloading basline and final models
-* Please download the baseline and final models via Zenodo at [![DOI](https://zenodo.org/badge/doi/10.xxxx/zenodo.yyyyyyy.svg)](https://doi.org/10.xxxx/zenodo.yyyyyyy)
+* Please download the baseline and final models via Zenodo at [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.11350064.svg)](https://doi.org/10.5281/zenodo.11350064)
 * For the baseline models, please extract and put all *.pkl files into the [models/baseline_models](https://github.com/nhattruongpham/mACPpred2/tree/main/models/baseline_models) folder.
 * For the final models, please please extract and put all *.h5 files into [models/final_models](https://github.com/nhattruongpham/mACPpred2/tree/main/models/final_models) folder.
 
