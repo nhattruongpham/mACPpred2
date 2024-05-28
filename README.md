@@ -3,7 +3,7 @@
     <br>
 <h1>
 
-<h4 align="center">Standalone program for the paper "mACPpred 2.0: Integrating NLP-derived and conventional ML-based probabilistic features for accurate anticancer peptide identification using stacked deep learning"</h4>
+<h4 align="center">Standalone program for the paper "mACPpred 2.0: Stacked deep learning for anticancer peptide prediction with integrated spatial and probabilistic feature representations"</h4>
 
 <p align="center">
 <a href=""><img src="https://img.shields.io/github/stars/nhattruongpham/mACPpred2?" alt="stars"></a>
@@ -120,7 +120,7 @@ CUDA_VISIBLE_DEVICES=0 python predictor.py --input_file examples/test.fasta --ou
 If you use this code or part of it, please cite the following papers:
 ```
 @article{Sangaraju2024article,
-  title={mACPpred 2.0: Integrating NLP-derived and conventional ML-based probabilistic features for accurate anticancer peptide identification using stacked deep learning},
+  title={mACPpred 2.0: Stacked deep learning for anticancer peptide prediction with integrated spatial and probabilistic feature representations},
   author={Sangaraju, Vinoth Kumar and Pham, Nhat Truong and Wei, Leyi and Yu, Xue and Manavalan, Balachandran},
   journal={},
   volume={},
