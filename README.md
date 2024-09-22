@@ -3,7 +3,7 @@
     <br>
 <h1>
 
-<h4 align="center">Standalone program for the paper "mACPpred 2.0: Stacked deep learning for anticancer peptide prediction with integrated spatial and probabilistic feature representations"</h4>
+<h4 align="center">Standalone program for the paper "mACPpred 2.0: Stacked Deep Learning for Anticancer Peptide Prediction with Integrated Spatial and Probabilistic Feature Representations"</h4>
 
 <p align="center">
 <a href=""><img src="https://img.shields.io/github/stars/nhattruongpham/mACPpred2?" alt="stars"></a>
@@ -26,6 +26,9 @@
 
 ## Introduction
 This repository provides the standalone program that was added to the mACPpred 2.0 web server at https://balalab-skku.org/mACPpred2/. The baseline and final models are available via Zenodo at [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.11350064.svg)](https://doi.org/10.5281/zenodo.11350064)
+
+* Development: https://github.com/nhattruongpham/mACPpred2.git
+* Release: https://github.com/cbbl-skku-org/mACPpred2.git
 
 ## Installation
 ### Software requirements
@@ -55,6 +58,9 @@ python -m pip install tensorflow==2.11.* --no-cache-dir
 ```shell
 python -m pip install chardet --no-cache-dir
 ```
+```shell
+conda install anaconda::numpy-base
+```
 ```
 mkdir -p $CONDA_PREFIX/etc/conda/activate.d
 ```
@@ -70,6 +76,12 @@ source $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
 
 ### Installing bio-embeddings<sup>[1]</sup> and re-installing PyTorch with CUDA support
 ```shell
+python -m pip install --upgrade pip setuptools wheel --no-cache-dir
+```
+```shell
+python -m pip install gensim==3.8 --use-pep517 --no-cache-dir
+```
+```shell
 python -m pip install bio-embeddings[seqvec] --no-cache-dir
 ```
 ```shell
@@ -80,6 +92,15 @@ python -m pip install protobuf==3.20.* --no-cache-dir
 ```
 ```shell
 python -m pip install bio-embeddings[all] --no-cache-dir
+```
+```shell
+python -m pip uninstall numpy
+```
+```shell
+python -m pip install numpy==1.26.0 --no-cache-dir
+```
+```shell
+conda install anaconda::numpy-base
 ```
 ```shell
 python -m pip uninstall torch
@@ -124,16 +145,33 @@ CUDA_VISIBLE_DEVICES=0 python predictor.py --input_file examples/test.fasta --ou
 
 ## Citation
 If you use this code or part of it, please cite the following papers:
+### Main
 ```
-@article{Sangaraju2024article,
-  title={mACPpred 2.0: Stacked deep learning for anticancer peptide prediction with integrated spatial and probabilistic feature representations},
+@article{sangaraju2024macppred,
+  title={mACPpred 2.0: Stacked Deep Learning for Anticancer Peptide Prediction with Integrated Spatial and Probabilistic Feature Representations},
   author={Sangaraju, Vinoth Kumar and Pham, Nhat Truong and Wei, Leyi and Yu, Xue and Manavalan, Balachandran},
-  journal={},
-  volume={},
-  number={},
-  pages={},
-  year={},
-  publisher={}
+  journal={Journal of Molecular Biology},
+  volume={436},
+  number={17},
+  pages={168687},
+  year={2024},
+  publisher={Elsevier}
+}
+```
+### Zenodo
+```
+@software{sangaraju_2024_11350064,
+  author       = {Sangaraju, Vinoth Kumar and
+                  Pham, Nhat Truong and
+                  Manavalan, Balachandran},
+  title        = {{mACPpred 2.0: Stacked deep learning for anticancer 
+                   peptide prediction with integrated spatial and
+                   probabilistic feature representations}},
+  month        = may,
+  year         = 2024,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.11350064},
+  url          = {https://doi.org/10.5281/zenodo.11350064}
 }
 ```
 
